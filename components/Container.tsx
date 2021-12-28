@@ -5,12 +5,10 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 interface IContainerProps {
-  children: FC;
+  children?: FC;
 }
 
 const Container: FC<IContainerProps> = ({ children }) => {
-  const router = useRouter();
-
   const meta = {
     title: "Ceulain Bansimba - Developer and Football Educator",
     description: `I love football`,
