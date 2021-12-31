@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FC } from "react";
@@ -21,7 +22,14 @@ const LinkNavbar: FC<ILinkNavbarProps> = ({ name, path }) => {
           }
         >
           {name}
-          {router.asPath === path && <img src="/arrow-bottom.svg"></img>}
+          {router.asPath === path && (
+            <Image
+              alt="arrow bottom"
+              src="/arrow-bottom.svg"
+              width={16}
+              height={16}
+            />
+          )}
         </a>
       </Link>
     </div>
