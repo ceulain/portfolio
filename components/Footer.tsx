@@ -7,10 +7,9 @@ const Footer: FC = () => {
     <footer className="bg-[#F1F1F1]">
       <div className="max-w-6xl  mx-auto px-4 py-10">
         <div className="h-0.5 w-full bg-white"></div>
-        <div className="flex flex-row space-y-4 md:space-y-0 justify-between mt-8">
+        <div className="flex flex-row space-y-4 md:space-y-0 justify-between mt-8 flex-wrap">
           <p>&copy; {`${userData.name}. All Rights Reserved.`}</p>
           <div>
-            {/* Support me by keeping this in the footer, please. :) */}
             <p>
               Developed by
               <div className="inline-block transform hover:scale-110 hover:-rotate-3 transition duration-300">

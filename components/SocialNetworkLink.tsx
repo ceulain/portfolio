@@ -14,7 +14,13 @@ const SocialNetworkLink: FC<ISocialNetworkLinkProps> = ({
 }) => {
   return (
     <a href={link} className="text-base font-normal text-gray-600">
-      <Image src={imageUrl} width={16} height={16} alt={name}></Image>
+      <Image
+        src={imageUrl}
+        width={16}
+        height={16}
+        alt={name}
+        layout="fixed"
+      ></Image>
     </a>
   );
 };

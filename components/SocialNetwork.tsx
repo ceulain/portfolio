@@ -1,9 +1,9 @@
 import userData from "@constants/userData";
-import { FC } from "react";
+import React, { FC } from "react";
 import SocialNetworkLink from "./SocialNetworkLink";
 
 const SocialNetwork: FC = () => (
-  <div className="space-x-4 flex flex-row items-center">
+  <React.Fragment>
     <SocialNetworkLink
       imageUrl="/linkedin.svg"
       link={userData.socialLinks.linkedin}
@@ -14,7 +14,7 @@ const SocialNetwork: FC = () => (
       link={userData.socialLinks.twitter}
       name="linkedin"
     />
-  </div>
+  </React.Fragment>
 );
 
 export default SocialNetwork;

@@ -14,7 +14,7 @@ const LinkNavbar: FC<ILinkNavbarProps> = ({ name, path }) => {
   const router = useRouter();
 
   return (
-    <div className="space-x-8 hidden md:block">
+    <div className="">
       <Link href={path}>
         <a
           className={
@@ -23,12 +23,15 @@ const LinkNavbar: FC<ILinkNavbarProps> = ({ name, path }) => {
         >
           {name}
           {router.asPath === path && (
-            <Image
-              alt="arrow bottom"
-              src="/arrow-bottom.svg"
-              width={16}
-              height={16}
-            />
+            // workaround allows to add style to next image
+            <div className="hidden md:inline">
+              <Image
+                alt="arrow bottom"
+                src="/arrow-bottom.svg"
+                width={16}
+                height={16}
+              />
+            </div>
           )}
         </a>
       </Link>

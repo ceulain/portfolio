@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { FC } from "react";
+import React, { FC } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
@@ -17,7 +17,7 @@ const Container: FC<IContainerProps> = ({ children }) => {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <Head>
         <title>{meta.title}</title>
         {/* <meta name="robots" content="follow, index" /> */}
@@ -44,12 +44,12 @@ const Container: FC<IContainerProps> = ({ children }) => {
           <meta property="article:published_time" content={meta.date} />
         )} */}
       </Head>
-      <main className="dark:bg-gray-800 w-full">
+      <main className="dark:bg-gray-800 w-full overflow-hidden">
         <Navbar />
         <div>{children}</div>
         <Footer />
       </main>
-    </div>
+    </React.Fragment>
   );
 };
 
