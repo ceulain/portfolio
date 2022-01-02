@@ -22,7 +22,9 @@ const Footer: FC = () => {
               </div>
             </p>
           </div>
-          <SocialNetwork />
+          <div className="space-x-4 flex flex-row items-center">
+            <SocialNetwork />
+          </div>
         </div>
       </div>
     </footer>

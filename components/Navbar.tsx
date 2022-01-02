@@ -4,6 +4,7 @@ import Link from "next/link";
 import LinkNavbar from "./LinkNavbar";
 import SocialNetworkLink from "./SocialNetworkLink";
 import SocialNetwork from "./SocialNetwork";
+import ThemeChanger from "./ThemeChanger";
 
 const Navbar: FC = () => {
   return (
@@ -29,6 +30,7 @@ const Navbar: FC = () => {
         {/* Social Network */}
         <div className="space-x-4 flex flex-row items-center">
           <SocialNetwork />
+          <ThemeChanger />
         </div>
       </nav>
     </div>
