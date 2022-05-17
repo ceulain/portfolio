@@ -1,7 +1,9 @@
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FC } from "react";
+import { Theme } from "types/theme";
 
 interface ILinkNavbarProps {
   name: string;
@@ -9,9 +11,11 @@ interface ILinkNavbarProps {
 }
 
 const LinkNavbar: FC<ILinkNavbarProps> = ({ name, path }) => {
-  const selectionnedItemStyle = "text-base text-gray-800 font-bold";
+  const selectionnedItemStyle =
+    "text-base text-gray-800 font-bold dark:text-gray-400";
   const normalItemStyle = "text-base text-gray-600 font-normal";
   const router = useRouter();
+  const { theme } = useTheme();
 
   return (
     <div className="">
@@ -27,7 +31,11 @@ const LinkNavbar: FC<ILinkNavbarProps> = ({ name, path }) => {
             <div className="hidden md:inline">
               <Image
                 alt="arrow bottom"
-                src="/arrow-bottom.svg"
+                src={
+                  theme === Theme.Dark
+                    ? "/dark-arrow-bottom.svg"
+                    : "/arrow-bottom.svg"
+                }
                 width={16}
                 height={16}
               />

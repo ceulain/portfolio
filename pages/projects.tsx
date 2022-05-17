@@ -1,8 +1,8 @@
 import Container from "components/Container";
 import { NextPage } from "next";
 
-const Projects: NextPage = () => {
+const Project: NextPage = () => {
   return <Container></Container>;
 };
 
-export default Projects;
+export default Project;
