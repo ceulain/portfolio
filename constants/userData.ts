@@ -1,5 +1,6 @@
 const userData = {
   name: "Bansimba Ceulain",
+  avatarUrl: "/me-webcam-toy.png",
   designation: "Front-End Developer & Young football coach",
   socialLinks: {
     twitter: "https://twitter.com/barthsims",

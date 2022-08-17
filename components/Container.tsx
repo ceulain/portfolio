@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import React, { FC } from "react";
+import React, { FC, ReactElement } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 interface IContainerProps {
-  children?: FC;
+  children?: ReactElement;
 }
 
 const Container: FC<IContainerProps> = ({ children }) => {
