@@ -16,10 +16,10 @@
     "incremental": true,
     "paths": {
       "@constants/*": ["constants/*"],
-      "@components/*": ["components/*"]
+      "@components/*": ["components/*"],
     },
-    "baseUrl": "."
+    "baseUrl": ".",
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "type.d.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }

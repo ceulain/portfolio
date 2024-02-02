@@ -1,4 +1,5 @@
 import Container from "@components/Container";
+
 import { NextPage } from "next";
 
 const Contact: NextPage = () => {
