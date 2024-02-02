@@ -1,6 +1,6 @@
 import userData from "@constants/userData";
-import Container from "components/Container";
-import Ping from "components/Ping";
+import Container from "@components/Container";
+import Ping from "@components/Ping";
 import { NextPage } from "next";
 
 const Experience: NextPage = () => (

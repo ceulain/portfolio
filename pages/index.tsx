@@ -1,7 +1,8 @@
-import FavouriteProject from "components/FavouriteProjects";
-import Hero from "components/Hero";
+import FavouriteProject from "@components/FavouriteProjects";
+import Hero from "@components/Hero";
+import Container from "@components/Container";
+
 import type { NextPage } from "next";
-import Container from "../components/Container";
 
 const Home: NextPage = () => {
   return (

@@ -1,8 +1,7 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import React, { FC, ReactElement } from "react";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Footer from "@components/Footer";
+import Navbar from "@components/Navbar";
 
 interface IContainerProps {
   children?: ReactElement;
