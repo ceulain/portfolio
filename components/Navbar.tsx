@@ -11,13 +11,11 @@ const Navbar: FC = () => {
       <nav className="flex md:flex-row justify-between flex-wrap items-center">
         {/* Home */}
         <div className="flex flex-col">
-          <Link href="/">
-            <a className="font-semibold text-xl">
-              {userData.name}
-              <p className="text-base font-light text-gray-500">
-                {userData.designation}
-              </p>
-            </a>
+          <Link href="/" className="font-semibold text-xl">
+            {userData.name}
+            <p className="text-base font-light text-gray-500">
+              {userData.designation}
+            </p>
           </Link>
         </div>
         <div className="flex flex-col xs:flex-row justify-between xs:space-x-6 sm:space-x-8 md:order-none marg">

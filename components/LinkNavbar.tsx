@@ -19,29 +19,28 @@ const LinkNavbar: FC<ILinkNavbarProps> = ({ name, path }) => {
 
   return (
     <div className="">
-      <Link href={path}>
-        <a
-          className={
-            router.asPath === path ? selectionnedItemStyle : normalItemStyle
-          }
-        >
-          {name}
-          {router.asPath === path && (
-            // workaround allows to add style to next image
-            <div className="hidden md:inline">
-              <Image
-                alt="arrow bottom"
-                src={
-                  theme === Theme.Dark
-                    ? "/dark-arrow-bottom.svg"
-                    : "/arrow-bottom.svg"
-                }
-                width={16}
-                height={16}
-              />
-            </div>
-          )}
-        </a>
+      <Link
+        href={path}
+        className={
+          router.asPath === path ? selectionnedItemStyle : normalItemStyle
+        }
+      >
+        {name}
+        {router.asPath === path && (
+          // workaround allows to add style to next image
+          <div className="hidden md:inline">
+            <Image
+              alt="arrow bottom"
+              src={
+                theme === Theme.Dark
+                  ? "/dark-arrow-bottom.svg"
+                  : "/arrow-bottom.svg"
+              }
+              width={16}
+              height={16}
+            />
+          </div>
+        )}
       </Link>
     </div>
   );

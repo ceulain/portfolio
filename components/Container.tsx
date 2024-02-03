@@ -16,7 +16,7 @@ const Container: FC<IContainerProps> = ({ children }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <Head>
         <title>{meta.title}</title>
         {/* <meta name="robots" content="follow, index" /> */}
@@ -48,7 +48,7 @@ const Container: FC<IContainerProps> = ({ children }) => {
         <div>{children}</div>
         <Footer />
       </main>
-    </React.Fragment>
+    </>
   );
 };
 
