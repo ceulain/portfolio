@@ -43,11 +43,12 @@ const Container: FC<IContainerProps> = ({ children }) => {
           <meta property="article:published_time" content={meta.date} />
         )} */}
       </Head>
+
+      <Navbar />
       <main className="dark:bg-gray-800 w-full overflow-hidden">
-        <Navbar />
         <div>{children}</div>
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 };
