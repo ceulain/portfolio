@@ -2,6 +2,7 @@ import userData from "@constants/userData";
 import Container from "@components/Container";
 import Ping from "@components/Ping";
 import { NextPage } from "next";
+import Image from "next/image";
 
 const Experience: NextPage = () => (
   <Container>
@@ -40,7 +41,7 @@ interface Props {
   year: string;
   company: string;
   companyLink: string;
-  logoUrl: string;
+  logoUrl?: string;
 }
 
 const ExperienceCard = ({
@@ -62,7 +63,15 @@ const ExperienceCard = ({
           <p className="text-gray-600 dark:text-gray-400 my-2">{desc}</p>
         )}
       </div>
-      {logoUrl && <img width="40" height="40" src={logoUrl} />}
+      {logoUrl && (
+        <Image
+          src={logoUrl}
+          alt={company}
+          width="40"
+          height="40"
+          sizes="100vw"
+        />
+      )}
     </div>
   );
 };

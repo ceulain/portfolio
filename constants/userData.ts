@@ -33,7 +33,6 @@ const userData = {
       year: "2017",
       companyLink: "https://get.flui.city/",
       desc: "",
-      logoUrl: "fluicity.webp",
     },
   ],
   socialLinks: {
