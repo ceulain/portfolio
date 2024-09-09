@@ -50,6 +50,9 @@ header {
   height: 100vh;
   width: 100%;
   background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header h1 {
@@ -57,8 +60,24 @@ header h1 {
 }
 
 header h1:before {
-  position: absolute;
+  content: "";
+  position: relative;
   width: 30px;
   height: 4px;
   background-color: #fff;
+  right: 35px;
+  top: 30px;
+
+  display: block;
+}
+
+header h1::after {
+  content: "";
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  left: 240px;
+  bottom: 20px;
+  display: block;
 }
